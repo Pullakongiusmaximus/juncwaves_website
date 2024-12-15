@@ -56,10 +56,6 @@ header#header {
 
 header#header nav#main-nav .navbar-nav > li > a {
   color: white !important; /* Setzt die Schriftfarbe der Menülinks auf Weiß */
-}
-
-header#header nav#main-nav .navbar-nav > li > a:hover {
-  color: #cccccc !important; /* Setzt die Hover-Farbe auf Hellgrau */
 
 }
 .section-header {
