@@ -49,6 +49,18 @@ hr {
   background-image: -moz-linear-gradient(4deg, #2caab3 0%, #2c8cb3 100%);
   background-image: -webkit-linear-gradient(4deg, #2caab3 0%, #2c8cb3 100%);
   background-image: -ms-linear-gradient(4deg, #2caab3 0%, #2c8cb3 100%);
+
+eader#header {
+  background-color: black !important; /* Setzt den Header-Hintergrund auf Schwarz */
+}
+
+header#header nav#main-nav .navbar-nav > li > a {
+  color: white !important; /* Setzt die Schriftfarbe der Menülinks auf Weiß */
+}
+
+header#header nav#main-nav .navbar-nav > li > a:hover {
+  color: #cccccc !important; /* Setzt die Hover-Farbe auf Hellgrau */
+}
 }
 .section-header {
   margin-bottom: 50px;
