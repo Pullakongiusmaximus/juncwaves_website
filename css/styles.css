@@ -83,6 +83,20 @@ color: #000000;
   font-size: 13px;
 }
 
+#header {
+  background-color: black; /* Schwarzer Hintergrund für den Header */
+}
+
+#main-nav .navbar-nav > li > a {
+  color: white; /* Weiße Schriftfarbe für die Navigationslinks */
+  font-weight: 600; /* Optional: Stärkeres Gewicht für die Schrift */
+}
+
+#main-nav .navbar-nav > li > a:hover,
+#main-nav .navbar-nav > li > a:focus {
+  color: #cccccc; /* Hellgraue Schriftfarbe beim Hover-Effekt */
+}
+
 .btn {
   border-width: 0;
   border-radius: 0;
