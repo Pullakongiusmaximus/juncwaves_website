@@ -170,7 +170,9 @@ text-transform: uppercase;
 *******Header******
 **************************/
 #main-nav.navbar-default {
-background: #FFFFFF;
+background: url('https://github.com/Pullakongiusmaximus/juncwaves_website/blob/c39a1f992ef7894eedeae674c9da3f1867e59d08/images/welle2.svg') no-repeat center center;
+background-size: cover;
+height: 100px;
 /* padding: 10px 0; */
 }
 #main-nav.navbar-default .navbar-nav > li.active > a, #main-nav.navbar-default .navbar-nav > li.open > a, #main-nav.navbar-default .navbar-nav > li:hover > a {
