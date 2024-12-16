@@ -610,6 +610,11 @@ color:#fff;
 }
 /*Team*/ 
 #our-team {
+ display: flex;
+  justify-content: center;   /* Zentriert den gesamten Inhalt horizontal */
+  align-items: center;       /* Zentriert den gesamten Inhalt vertikal */
+  padding: 50px 0;           /* Zusätzlicher Abstand oben und unten */
+  background-color: #f9f9f9; /* Hintergrundfarbe für die Sektion */
   padding: 100px 0;
   background: #FFFFFF;
 }
