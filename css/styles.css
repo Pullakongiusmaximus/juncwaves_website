@@ -615,6 +615,41 @@ color:#fff;
   align-items: center;       /* Zentriert den gesamten Inhalt vertikal */
   padding: 50px 0;           /* Zusätzlicher Abstand oben und unten */
   background-color: #f9f9f9; /* Hintergrundfarbe für die Sektion */
+
+.container {
+  width: 100%;
+  max-width: 1200px;         /* Setzt eine maximale Breite */
+  padding: 0 15px;           /* Sorgt dafür, dass der Inhalt nicht am Rand klebt */
+}
+
+.section-header {
+  text-align: center;        /* Zentriert die Überschrift */
+  margin-bottom: 50px;       /* Abstand nach unten */
+}
+
+.row {
+  display: flex;
+  justify-content: center;    /* Zentriert die Team-Mitglieder horizontal */
+  flex-wrap: wrap;            /* Ermöglicht das Umwickeln der Team-Mitglieder auf kleinen Bildschirmen */
+}
+
+.col-md-3 {
+  flex: 1 1 22%;  /* Bestimmt, dass jedes Team-Mitglied 22% der Gesamtbreite einnimmt */
+  margin: 15px;    /* Abstand zwischen den Team-Mitgliedern */
+}
+
+@media (max-width: 768px) {
+  .col-md-3 {
+    flex: 1 1 48%; /* Bei Tablets wird der Platz für jedes Team-Mitglied auf 48% reduziert */
+  }
+}
+
+@media (max-width: 480px) {
+  .col-md-3 {
+    flex: 1 1 100%; /* Auf kleinen Bildschirmen wird jedes Team-Mitglied 100% der Breite einnehmen */
+  }
+}
+
   padding: 100px 0;
   background: #FFFFFF;
 }
