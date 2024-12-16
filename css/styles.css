@@ -610,16 +610,17 @@ color:#fff;
 }
 /*Team*/ 
 #our-team {
- display: flex;
+display: flex;
   justify-content: center;   /* Zentriert den gesamten Inhalt horizontal */
-  align-items: center;       /* Zentriert den gesamten Inhalt vertikal */
-  padding: 50px 0;           /* Zusätzlicher Abstand oben und unten */
-  background-color: #f9f9f9; /* Hintergrundfarbe für die Sektion */
+  align-items: flex-start;    /* Stellt sicher, dass der Inhalt nicht vertikal verschoben wird */
+  padding: 50px 0;           /* Abstand oben und unten */
+  background-color: #f9f9f9; /* Hintergrundfarbe */
+}
 
 .container {
   width: 100%;
-  max-width: 1200px;         /* Setzt eine maximale Breite */
-  padding: 0 15px;           /* Sorgt dafür, dass der Inhalt nicht am Rand klebt */
+  max-width: 1200px;           /* Maximale Breite des Containers */
+  padding: 0 15px;             /* Abstand zum Rand */
 }
 
 .section-header {
@@ -630,23 +631,24 @@ color:#fff;
 .row {
   display: flex;
   justify-content: center;    /* Zentriert die Team-Mitglieder horizontal */
-  flex-wrap: wrap;            /* Ermöglicht das Umwickeln der Team-Mitglieder auf kleinen Bildschirmen */
+  flex-wrap: wrap;            /* Erlaubt das Umwickeln der Team-Mitglieder bei kleineren Bildschirmen */
+  gap: 30px;                  /* Fügt Abstand zwischen den Team-Mitgliedern hinzu */
 }
 
 .col-md-3 {
-  flex: 1 1 22%;  /* Bestimmt, dass jedes Team-Mitglied 22% der Gesamtbreite einnimmt */
-  margin: 15px;    /* Abstand zwischen den Team-Mitgliedern */
+  flex: 1 1 22%;              /* Bestimmt, dass jedes Team-Mitglied 22% der Gesamtbreite einnimmt */
+  box-sizing: border-box;     /* Verhindert, dass die Breitenangaben durch Padding oder Margin überschrieben werden */
 }
 
 @media (max-width: 768px) {
   .col-md-3 {
-    flex: 1 1 48%; /* Bei Tablets wird der Platz für jedes Team-Mitglied auf 48% reduziert */
+    flex: 1 1 48%;            /* Bei Tablets wird der Platz für jedes Team-Mitglied auf 48% reduziert */
   }
 }
 
 @media (max-width: 480px) {
   .col-md-3 {
-    flex: 1 1 100%; /* Auf kleinen Bildschirmen wird jedes Team-Mitglied 100% der Breite einnehmen */
+    flex: 1 1 100%;           /* Auf kleinen Bildschirmen wird jedes Team-Mitglied 100% der Breite einnehmen */
   }
 }
 
