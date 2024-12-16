@@ -175,7 +175,7 @@ background: #FFFFFF;
 }
 #main-nav.navbar-default .navbar-nav > li.active > a, #main-nav.navbar-default .navbar-nav > li.open > a, #main-nav.navbar-default .navbar-nav > li:hover > a {
 background: #1335A3;
-color: #FFFFFF;
+color: #000000;
 /* font-weight: bold; */
 }
 .navbar.navbar-default {
