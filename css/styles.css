@@ -655,6 +655,24 @@ display: flex;
   padding: 100px 0;
   background: #FFFFFF;
 }
+.team-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 #our-team .team-member {
   padding: 0;  
 }
