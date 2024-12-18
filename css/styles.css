@@ -187,15 +187,17 @@ color: #FFFFFF;
   margin-top: 32px;
 }
 .navbar.navbar-default .navbar-brand img {
-  max-height: 90px;
-  max-width: 90px;
-  height: auto; /* Hält die Proportionen */
-  width: auto; /* Verhindert Verzerrungen */
-  display: inline-block; /* Stelle sicher, dass das Bild gerendert wird */
-  visibility: visible; /* Sichtbarkeit */
-  opacity: 1; /* Vollständig sichtbar */
+  max-width: 150px; /* Maximale Breite */
+  max-height: 90px; /* Maximale Höhe */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  visibility: visible;
+  opacity: 1;
   padding: 15px 15px 1px;
+  vertical-align: middle; /* Zentriert das Logo vertikal */
 }
+
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
 color: #F8680D;
  
