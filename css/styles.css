@@ -194,7 +194,7 @@ color: #FFFFFF;
   display: inline-block;
   visibility: visible;
   opacity: 1;
-  padding: 10px 20px 5px;
+  padding: 10px 15px 5px;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
