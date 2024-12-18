@@ -187,8 +187,8 @@ color: #FFFFFF;
   margin-top: 32px;
 }
 .navbar.navbar-default .navbar-brand img {
-  max-height: 70px;
-  max-width: 70px;
+  max-height: 90px;
+  max-width: 90px;
   height: auto; /* Hält die Proportionen */
   width: auto; /* Verhindert Verzerrungen */
   display: inline-block; /* Stelle sicher, dass das Bild gerendert wird */
