@@ -187,14 +187,14 @@ color: #FFFFFF;
   margin-top: 32px;
 }
 .navbar.navbar-default .navbar-brand img {
-  max-width: 75px; /* Maximale Breite */
-  max-height: 75px; /* Maximale Höhe */
+  max-width: 65px; /* Maximale Breite */
+  max-height: 85px; /* Maximale Höhe */
   width: auto;
   height: auto;
   display: inline-block;
   visibility: visible;
   opacity: 1;
-  padding: 10px 15px 5px;
+  padding: 10px 15px 10px;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
