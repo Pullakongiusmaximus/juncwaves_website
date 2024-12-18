@@ -188,6 +188,8 @@ color: #FFFFFF;
 }
 .navbar.navbar-default .navbar-brand {
   max-height: 150;
+  height: auto; /* Hält die Proportionen */
+  width: auto; /* Verhindert Verzerrungen */
   padding: 15px 15px 1px;
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
