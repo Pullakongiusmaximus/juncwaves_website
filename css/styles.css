@@ -190,6 +190,9 @@ color: #FFFFFF;
   max-height: 50px;
   height: auto; /* Hält die Proportionen */
   width: auto; /* Verhindert Verzerrungen */
+  display: inline-block; /* Stelle sicher, dass das Bild gerendert wird */
+  visibility: visible; /* Sichtbarkeit */
+  opacity: 1; /* Vollständig sichtbar */
   padding: 15px 15px 1px;
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
