@@ -187,7 +187,7 @@ color: #FFFFFF;
   margin-top: 32px;
 }
 .navbar.navbar-default .navbar-brand {
-  max-height: 150;
+  max-height: 50;
   height: auto; /* Hält die Proportionen */
   width: auto; /* Verhindert Verzerrungen */
   padding: 15px 15px 1px;
