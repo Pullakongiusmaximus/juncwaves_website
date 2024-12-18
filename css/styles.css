@@ -186,7 +186,7 @@ color: #FFFFFF;
 .navbar.navbar-default .navbar-toggle {
   margin-top: 32px;
 }
-.navbar.navbar-default .navbar-brand svg {
+.navbar.navbar-default .navbar-brand img {
   max-height: 50px;
   height: auto; /* Hält die Proportionen */
   width: auto; /* Verhindert Verzerrungen */
