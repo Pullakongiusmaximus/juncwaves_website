@@ -29,6 +29,34 @@
     <link rel="shortcut icon" href="images/ico/favicon.ico"> 
 </head> 
 
+	  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Überprüfen, ob der Bildschirm kleiner als 768px ist (Mobilgeräte und Tablets)
+      if (window.innerWidth <= 768) {
+        // Swiper nur auf mobilen Geräten initialisieren
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 1, // Eine Folie auf einmal
+          spaceBetween: 10, // Abstand zwischen den Folien
+          loop: true, // Endlosschleife
+          autoplay: {
+            delay: 3000, // Automatische Folienwechsel nach 3 Sekunden
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true, // Klickbare Punkte für die Foliennavigation
+          },
+          navigation: {
+            nextEl: '.swiper-button-next', // Nächster Button
+            prevEl: '.swiper-button-prev', // Vorheriger Button
+          },
+          touchEventsTarget: 'container',  // Aktivierung der Wischfunktion
+        });
+      } else {
+        // Swiper wird auf dem Desktop nicht aktiviert
+        // Hier kannst du weitere Anpassungen vornehmen, wenn notwendig
+      }
+    });
+  </script>
 <body id="home">
     <header id="header">
         <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
