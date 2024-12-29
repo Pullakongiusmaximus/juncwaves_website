@@ -32,30 +32,32 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        // Überprüfen, ob der Bildschirm kleiner als 768px ist (Mobilgeräte und Tablets)
+        var swiperOptions = {
+            slidesPerView: 1, // Eine Folie auf einmal
+            spaceBetween: 10, // Abstand zwischen den Folien
+            loop: true, // Endlosschleife
+            autoplay: {
+                delay: 3000, // Automatischer Folienwechsel nach 3 Sekunden
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true, // Klickbare Punkte für die Foliennavigation
+            },
+            navigation: {
+                nextEl: '.swiper-button-next', // Nächster Button
+                prevEl: '.swiper-button-prev', // Vorheriger Button
+            }
+        };
+
+        // Wenn der Bildschirm kleiner oder gleich 768px ist, wird Swiping aktiviert
         if (window.innerWidth <= 768) {
-            // Swiper nur auf mobilen Geräten initialisieren
-            var swiper = new Swiper('.swiper-container', {
-                slidesPerView: 1, // Eine Folie auf einmal
-                spaceBetween: 10, // Abstand zwischen den Folien
-                loop: true, // Endlosschleife
-                autoplay: {
-                    delay: 3000, // Automatischer Folienwechsel nach 3 Sekunden
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true, // Klickbare Punkte für die Foliennavigation
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next', // Nächster Button
-                    prevEl: '.swiper-button-prev', // Vorheriger Button
-                },
-                touchEventsTarget: 'container',  // Aktivierung der Wischfunktion
-            });
+            swiperOptions.touchEventsTarget = 'container'; // Aktivierung der Wischfunktion
         } else {
-            // Swiper wird auf dem Desktop nicht aktiviert
-            // Hier kannst du weitere Anpassungen vornehmen, wenn notwendig
+            swiperOptions.touchEventsTarget = 'wrapper'; // Deaktivierung der Wischfunktion auf dem Desktop
         }
+
+        // Swiper initialisieren
+        var swiper = new Swiper('.swiper-container', swiperOptions);
     });
 </script>
 
@@ -86,7 +88,7 @@
     </header><!--/header-->
 
     <section class="demo-2">
-        <!-- Swiper-Container: Wird nur auf mobilen Geräten angezeigt -->
+        <!-- Swiper-Container: Wird jetzt auf allen Geräten angezeigt -->
         <div id="slider" class="swiper-container">
             <div class="swiper-wrapper">
 
