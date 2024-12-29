@@ -22,6 +22,51 @@
     <![endif]-->       
     <link rel="shortcut icon" href="images/ico/favicon.ico"> 
 </head> 
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/prettyPhoto.js"></script>
+<script src="js/custom.js"></script>
+
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        // Überprüfen, ob der Bildschirm kleiner als 768px ist (Mobilgeräte und Tablets)
+        if (window.innerWidth <= 768) {
+            // Swiper nur auf mobilen Geräten initialisieren
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1, // Eine Folie auf einmal
+                spaceBetween: 10, // Abstand zwischen den Folien
+                loop: true, // Endlosschleife
+                autoplay: {
+                    delay: 3000, // Automatischer Folienwechsel nach 3 Sekunden
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true, // Klickbare Punkte für die Foliennavigation
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next', // Nächster Button
+                    prevEl: '.swiper-button-prev', // Vorheriger Button
+                },
+                touchEventsTarget: 'container',  // Aktivierung der Wischfunktion
+            });
+        } else {
+            // Für Desktop wird der normale Slider verwendet, ohne Swiper
+            var slider = new SlSlider('.sl-slider-wrapper', {
+                orientation: 'horizontal',
+                slice1Rotation: -25,
+                slice2Rotation: -25,
+                slice1Scale: 2,
+                slice2Scale: 2,
+                navigation: true,
+                dots: true,
+            });
+        }
+    });
+</script>
+
+<script src="js/slider.min.js"></script>
 
 <body id="home">
     <header id="header">
