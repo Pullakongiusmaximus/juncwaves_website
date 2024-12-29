@@ -140,7 +140,12 @@ text-transform: uppercase;
 .scaleIn {
   /* Keine Animation */
 }
-/*************************
+* {
+  animation: none !important;
+  transition: none !important;
+}
+/***
+**********************
 *******Header******
 **************************/
 #main-nav.navbar-default {
