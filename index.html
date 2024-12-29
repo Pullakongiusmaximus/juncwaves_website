@@ -16,69 +16,12 @@
         <link rel="stylesheet" type="text/css" href="css/slider-style.css" />
         <link rel="stylesheet" type="text/css" href="css/slider-custom.css" />
 		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
-	<!-- Bootstrap CSS und JS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-<!-- Swiper.js CSS und JS (für den mobilen Slider) -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-<!-- Slider-spezifische CSS-Dateien -->
-    <link rel="stylesheet" href="css/slider-style.css" />
-    <link rel="stylesheet" href="css/slider-custom.css" />
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->       
     <link rel="shortcut icon" href="images/ico/favicon.ico"> 
 </head> 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/prettyPhoto.js"></script>
-<script src="js/custom.js"></script>
-
-<script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function () {
-        // Überprüfen, ob der Bildschirm kleiner als 768px ist (Mobilgeräte und Tablets)
-        if (window.innerWidth <= 768) {
-            // Swiper nur auf mobilen Geräten initialisieren
-            var swiper = new Swiper('.swiper-container', {
-                slidesPerView: 1, // Eine Folie auf einmal
-                spaceBetween: 10, // Abstand zwischen den Folien
-                loop: true, // Endlosschleife
-                autoplay: {
-                    delay: 3000, // Automatischer Folienwechsel nach 3 Sekunden
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true, // Klickbare Punkte für die Foliennavigation
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next', // Nächster Button
-                    prevEl: '.swiper-button-prev', // Vorheriger Button
-                },
-                touchEventsTarget: 'container',  // Aktivierung der Wischfunktion
-            });
-        } else {
-            // Für Desktop wird der normale Slider verwendet, ohne Swiper
-            var slider = new SlSlider('.sl-slider-wrapper', {
-                orientation: 'horizontal',
-                slice1Rotation: -25,
-                slice2Rotation: -25,
-                slice1Scale: 2,
-                slice2Scale: 2,
-                navigation: true,
-                dots: true,
-            });
-        }
-    });
-</script>
-
-<script src="js/slider.min.js"></script>
 
 <body id="home">
     <header id="header">
@@ -107,60 +50,49 @@
         </nav><!--/nav-->
     </header><!--/header-->
 
-   <section class="demo-2">
-   <div id="slider" class="sl-slider-wrapper">
+    <section class="demo-2">
+           <div id="slider" class="sl-slider-wrapper">
 
-      <!-- Swiper-Container für mobile Geräte -->
-      <div class="swiper-container">
-         <div class="swiper-wrapper">
-            <div class="swiper-slide">
-               <div class="bg-img bg-img-1"></div>
-            </div>
-            <div class="swiper-slide">
-               <div class="bg-img bg-img-2"></div>
-            </div>
-            <div class="swiper-slide">
-               <div class="bg-img bg-img-3"></div>
-            </div>
-         </div>
-         
-         <!-- Pagination und Navigation für Swiper -->
-         <div class="swiper-pagination"></div>
-         <div class="swiper-button-next"></div>
-         <div class="swiper-button-prev"></div>
-      </div>
+				<div class="sl-slider">
+				
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+						<div class="sl-slide-inner">
+							<div class="bg-img bg-img-1"></div>
+							<div class="slide-caption">
+							
+							</div>
+						</div>
+					</div>
+					
+					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+						<div class="sl-slide-inner">
+							<div class="bg-img bg-img-2"></div>
+							<div class="slide-caption">
+							
+							
+							</div>
+						</div>
+					</div>
+					
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="bg-img bg-img-3"></div>
+							<div class="slide-caption">
+							
+							</div>
+						</div>
+					</div>					
+				</div><!-- /sl-slider -->
 
-      <!-- SlSlider für Desktop (normaler Slider) -->
-      <div class="sl-slider">
-         <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-            <div class="sl-slide-inner">
-               <div class="bg-img bg-img-1"></div>
-               <div class="slide-caption"></div>
-            </div>
-         </div>
-         <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
-            <div class="sl-slide-inner">
-               <div class="bg-img bg-img-2"></div>
-               <div class="slide-caption"></div>
-            </div>
-         </div>
-         <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
-            <div class="sl-slide-inner">
-               <div class="bg-img bg-img-3"></div>
-               <div class="slide-caption"></div>
-            </div>
-         </div>
-      </div> 
+				<nav id="nav-dots" class="nav-dots">
+					<span class="nav-dot-current"></span>
+					<span></span>
+					<span></span> 
+				</nav>
 
-      <nav id="nav-dots" class="nav-dots">
-         <span class="nav-dot-current"></span>
-         <span></span>
-         <span></span> 
-      </nav>
+			</div><!-- /slider-wrapper -->
 
-   </div> <!-- /slider-wrapper -->
-</section> <!-- /#main-slider -->
-
+    </section><!--/#main-slider-->
 
 
                 </div>
