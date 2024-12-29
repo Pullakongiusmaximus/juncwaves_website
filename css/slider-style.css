@@ -20,6 +20,10 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
+        will-change: transform; /* Hardwarebeschleunigung aktivieren */
+        transition: transform 1s ease, opacity 1s ease; /* Flüssige Übergänge */
+        backface-visibility: hidden; /* Verhindert Rendering-Fehler */
+        perspective: 1000px; /* Verbesserte 3D-Darstellung */
 	top: 0;
 	left: 0;
 } 
