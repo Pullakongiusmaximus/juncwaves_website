@@ -107,49 +107,60 @@
         </nav><!--/nav-->
     </header><!--/header-->
 
-    <section class="demo-2">
-           <div id="slider" class="sl-slider-wrapper">
+   <section class="demo-2">
+   <div id="slider" class="sl-slider-wrapper">
 
-				<div class="sl-slider">
-				
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-1"></div>
-							<div class="slide-caption">
-							
-							</div>
-						</div>
-					</div>
-					
-					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-2"></div>
-							<div class="slide-caption">
-							
-							
-							</div>
-						</div>
-					</div>
-					
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-3"></div>
-							<div class="slide-caption">
-							
-							</div>
-						</div>
-					</div>					
-				</div><!-- /sl-slider -->
+      <!-- Swiper-Container für mobile Geräte -->
+      <div class="swiper-container">
+         <div class="swiper-wrapper">
+            <div class="swiper-slide">
+               <div class="bg-img bg-img-1"></div>
+            </div>
+            <div class="swiper-slide">
+               <div class="bg-img bg-img-2"></div>
+            </div>
+            <div class="swiper-slide">
+               <div class="bg-img bg-img-3"></div>
+            </div>
+         </div>
+         
+         <!-- Pagination und Navigation für Swiper -->
+         <div class="swiper-pagination"></div>
+         <div class="swiper-button-next"></div>
+         <div class="swiper-button-prev"></div>
+      </div>
 
-				<nav id="nav-dots" class="nav-dots">
-					<span class="nav-dot-current"></span>
-					<span></span>
-					<span></span> 
-				</nav>
+      <!-- SlSlider für Desktop (normaler Slider) -->
+      <div class="sl-slider">
+         <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+            <div class="sl-slide-inner">
+               <div class="bg-img bg-img-1"></div>
+               <div class="slide-caption"></div>
+            </div>
+         </div>
+         <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+            <div class="sl-slide-inner">
+               <div class="bg-img bg-img-2"></div>
+               <div class="slide-caption"></div>
+            </div>
+         </div>
+         <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+            <div class="sl-slide-inner">
+               <div class="bg-img bg-img-3"></div>
+               <div class="slide-caption"></div>
+            </div>
+         </div>
+      </div> 
 
-			</div><!-- /slider-wrapper -->
+      <nav id="nav-dots" class="nav-dots">
+         <span class="nav-dot-current"></span>
+         <span></span>
+         <span></span> 
+      </nav>
 
-    </section><!--/#main-slider-->
+   </div> <!-- /slider-wrapper -->
+</section> <!-- /#main-slider -->
+
 
 
                 </div>
