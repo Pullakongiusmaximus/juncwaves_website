@@ -41,10 +41,10 @@ hr {
   border-bottom: 1px solid #fff;
 }
 .gradiant {
- background-color: black;
+ background-color: black !important;
 }
 .gradiant-horizontal {
-background-color: black;
+background-color: black !important;
 }
 .section-header {
   margin-bottom: 50px;
