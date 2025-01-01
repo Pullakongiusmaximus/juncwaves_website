@@ -188,7 +188,7 @@ color: #FFFFFF;
 }
 .navbar.navbar-default .navbar-brand img {
   max-width: 75px; /* Maximale Breite */
-  max-height: 85px; /* Maximale Höhe */
+  max-height: auto; /* Maximale Höhe */
   width: auto;
   height: auto;
   display: inline-block;
