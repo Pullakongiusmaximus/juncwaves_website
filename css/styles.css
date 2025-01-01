@@ -41,11 +41,14 @@ hr {
   border-bottom: 1px solid #fff;
 }
 .gradiant {
-  background-color: black;
+  background-image: -moz-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
+  background-image: -webkit-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
+  background-image: -ms-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
 }
-
 .gradiant-horizontal {
-  background-color: black;
+  background-image: -moz-linear-gradient(4deg, #2caab3 0%, #2c8cb3 100%);
+  background-image: -webkit-linear-gradient(4deg, #2caab3 0%, #2c8cb3 100%);
+  background-image: -ms-linear-gradient(4deg, #2caab3 0%, #2c8cb3 100%);
 }
 .section-header {
   margin-bottom: 50px;
@@ -185,7 +188,7 @@ color: #FFFFFF;
 }
 .navbar.navbar-default .navbar-brand img {
   max-width: 75px; /* Maximale Breite */
-  max-height: auto; /* Maximale Höhe */
+  max-height: 85px; /* Maximale Höhe */
   width: auto;
   height: auto;
   display: inline-block;
