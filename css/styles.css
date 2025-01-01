@@ -959,34 +959,21 @@ width: 100px;
   padding-bottom: 30px;
   color: #0B0B0B;
   background: #FFFFFF;
-  display: flex; /* Flexbox für die Zentrierung */
-  justify-content: center; /* Horizontale Zentrierung */
-  align-items: center; /* Vertikale Zentrierung */
-  text-align: center; /* Text im Footer zentrieren */
 }
-
 #footer a {
   color: #000;
 }
-
 #footer a:hover {
   color: #60E1BF;
 }
-
 #footer ul {
   list-style: none;
   padding: 0;
-  margin: 0;
-  display: flex;  /* Flexbox für horizontale Anordnung */
-  justify-content: center;  /* Zentriert die Icons */
+  margin: 0 -7.5px;
 }
-
 #footer ul > li {
-  padding: 3px 0;
-  width: auto;
-  margin: 0 7.5px; /* Abstand zwischen den Icons */
-  text-align: center;
-}
+ display: inline-block; 
+
 padding: 3px 0;
 width: 31px;
 text-align: center;
