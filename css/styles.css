@@ -196,13 +196,6 @@ color: #FFFFFF;
   opacity: 1;
   padding: 10px 15px 10px;
 }
-@media (min-width: 1200px) {
-  .navbar.navbar-default .navbar-brand img {
-    max-width: 100px; /* Adjust width for larger screens */
-    max-height: 120px; /* Adjust height for larger screens */
-    padding: 15px 20px; /* Adjust padding for larger screens */
-  }
-}
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
 color: #F8680D;
