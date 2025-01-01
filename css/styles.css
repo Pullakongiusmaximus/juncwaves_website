@@ -185,7 +185,7 @@ color: #FFFFFF;
 }
 .navbar.navbar-default .navbar-toggle {
   margin-top: 32px;
-}
+}@media (max-width: 120px)
 .navbar.navbar-default .navbar-brand img {
   max-width: 75px; /* Maximale Breite */
   max-height: 85px; /* Maximale Höhe */
