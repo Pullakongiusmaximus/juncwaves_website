@@ -3,97 +3,28 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="webthemez">
     <title>Juncwaves_Productions</title>
-    <!-- core CSS -->
+	<!-- core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
     <link href="css/prettyPhoto.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-   <script src="https://unpkg.com/swiper@11.1.15/swiper-bundle.min.js"></script>
-</head>
+    <link href="css/styles.css" rel="stylesheet"> 
+	
+        <link rel="stylesheet" type="text/css" href="css/slider-style.css" />
+        <link rel="stylesheet" type="text/css" href="css/slider-custom.css" />
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico"> 
+</head> 
+
 <body id="home">
     <header id="header">
-        <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt="Logo"></a>
-                </div>
-                <div class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li class="scroll active"><a href="#home">Home</a></li>
-                        <li class="scroll"><a href="#services">Services</a></li>
-                        <li class="scroll"><a href="#production">Production</a></li>
-                        <li class="scroll"><a href="#our-team">Team</a></li>
-                        <li class="scroll"><a href="#contact-us">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <section class="demo-2">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="bg-img bg-img-1"></div>
-                    <div class="slide-caption"></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="bg-img bg-img-2"></div>
-                    <div class="slide-caption"></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="bg-img bg-img-3"></div>
-                    <div class="slide-caption"></div>
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-    </section>
-
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/custom-scripts.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            // Enable swipe only on touch devices
-            simulateTouch: true,
-            touchRatio: 1,
-            touchAngle: 45,
-            noSwiping: true, // Prevent swipe on desktop
-            noSwipingClass: 'swiper-no-swiping',
-        });
-
-        // Add 'swiper-no-swiping' class to the container on desktop
-        if (!('ontouchstart' in window)) {
-            document.querySelector('.swiper-container').classList.add('swiper-no-swiping');
-        }
-    </script>
-</body>
-
-
-
         <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
             <div class="container">
                 <div class="navbar-header">
@@ -119,9 +50,50 @@
         </nav><!--/nav-->
     </header><!--/header-->
 
+    <section class="demo-2">
+           <div id="slider" class="sl-slider-wrapper">
 
+				<div class="sl-slider">
+				
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+						<div class="sl-slide-inner">
+							<div class="bg-img bg-img-1"></div>
+							<div class="slide-caption">
+							
+							</div>
+						</div>
+					</div>
+					
+					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+						<div class="sl-slide-inner">
+							<div class="bg-img bg-img-2"></div>
+							<div class="slide-caption">
+							
+							
+							</div>
+						</div>
+					</div>
+					
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="bg-img bg-img-3"></div>
+							<div class="slide-caption">
+							
+							</div>
+						</div>
+					</div>					
+				</div><!-- /sl-slider -->
 
-		
+				<nav id="nav-dots" class="nav-dots">
+					<span class="nav-dot-current"></span>
+					<span></span>
+					<span></span> 
+				</nav>
+
+			</div><!-- /slider-wrapper -->
+
+    </section><!--/#main-slider-->
+
 
                 </div>
             </div>
@@ -130,7 +102,7 @@
 <section id="hero-action-section" class="hero-action-section">
 		<!-- .Container -->
 		<div class="container ow-section">
-			<h3 class="hero-action-subtitle">WE DESIGN YOUR SONIC WAVES</h3>
+			<h3 class="hero-action-subtitle">WE DESIGN YOUR SONIC SCAPES</h3>
 			<h4 class="hero-action-title">Enjoy our offer to its full Extent</h4>
 			<p class="hero-action-description"><p>Why Choose Juncwaves Productions?<p>
 
