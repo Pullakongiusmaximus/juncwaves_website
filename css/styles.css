@@ -978,13 +978,14 @@ padding: 3px 0;
 width: 31px;
 text-align: center;
 }
-/*hero-action-section*/
+
 .hero-action-section {
-    background-image: url("../images/img2.jpg");
+    background-color: black !important;
     text-align: center;
     color: #fff;
     padding: 60px 0;
 }
+
 
 .hero-action-subtitle,
 .hero-action-title {
