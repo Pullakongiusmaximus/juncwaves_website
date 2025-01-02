@@ -272,25 +272,21 @@ Team
                     <div class="col-sm-8 col-md-8">
                         <div class="contact-form">
                        
-                 <form action="https://api.web3forms.com/submit" method="POST">
-
-    <!-- Replace with your Access Key -->
-    <input type="hidden" name="access_key" value="cca13278-f54f-4cae-9ead-dfe060681c4d">
-
-    <!-- Form Inputs. Each input must have a name="" attribute -->
-    <input type="text" name="name" required>
-    <input type="email" name="email" required>
-    <textarea name="message" required></textarea>
-
-    <!-- Honeypot Spam Protection -->
-    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-
-    <!-- Custom Confirmation / Success Page -->
-    <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
-
-    <button type="submit">Submit Form</button>
-
-</form>
+                            <form id="main-contact-form" name="contact-form" method="post" action="#">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" placeholder="Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message" class="form-control" rows="8" placeholder="Message" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
                         </div>
                     </div>
                 </div>
